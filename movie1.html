@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Showcase</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .movie-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .movie-box {
+      display: flex;
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .movie-image {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .movie-details {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .movie-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .director-name {
+      font-size: 16px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="movie-container">
+
+    <div class="movie-box">
+      <img src="t1.jpeg" class="movie-image" alt="Movie Poster">
+      <div class="movie-details">
+        <div>
+          <div class="movie-name">Nightfall Shadows</div>
+          <div class="director-name">Directed by: A. Kraven</div>
+        </div>
+        <div class="summary">A group of friends enters an abandoned asylum where their fears take terrifying form.</div>
+      </div>
+    </div>
+
+    <div class="movie-box">
+      <img src="t2.jpeg" class="movie-image" alt="Movie Poster">
+      <div class="movie-details">
+        <div>
+          <div class="movie-name">Silent Hunt</div>
+          <div class="director-name">Directed by: R. Vale</div>
+        </div>
+        <div class="summary">A detective chases a serial killer who leaves no clues, only a chilling silence.</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
