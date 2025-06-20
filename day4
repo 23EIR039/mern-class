@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Text on Click</title>
+  <style>
+    #name {
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: bold;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+<span id="name" onclick="changeName()">harini</span>
+
+<script>
+  function changeName() {
+    const nameSpan = document.getElementById("name");
+    if (nameSpan.textContent === "harini") {
+      nameSpan.textContent = "angel";
+    } else {
+      nameSpan.textContent = "harini";
+    }
+  }
+</script>
+
+</body>
+</html>
